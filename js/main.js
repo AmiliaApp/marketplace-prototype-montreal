@@ -12,6 +12,12 @@ $(document).ready(function() {
 
       $form.attr('action', value + '-list.html');
     });
+
+    $("a").click(function (event) {
+      event.preventDefault();
+      window.location = $(this).attr("href");
+    });
+    
   })();
 
 });
