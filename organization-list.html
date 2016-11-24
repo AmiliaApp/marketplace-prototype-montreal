@@ -1,0 +1,197 @@
+﻿<!doctype html>
+    <html class="no-js" lang="fr">
+    <head>
+        <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Montr&eacute;al - Loisirs en ligne</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/spacing.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+    <div class="content">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img class="img-responsive" src="img/logo-city.gif" />
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="pv--mini pull-right">
+                                <a href="#" class="btn btn-link">Connexion</a>
+                                <a href="#" class="btn btn-link">EN</a>
+                                <div class="cart">
+                                    <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-shopping-cart"></span><br />Panier</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <ol class="breadcrumb mv pl--none mb--none">
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active">
+                    <div class="dropdown" style="display: inline-block;">
+                        <button class="btn btn-link dropdown-toggle pa--none" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Organismes
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="activity-list.html">Activités</a></li>
+                            <li><a href="place-list.html">Lieux</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-5 col-md-3">
+
+                    <h3 class="h4 mt--more">Affiner les résultats</h3>
+                    <form class="form-inline mt--less" action="activity-list.html">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Chercher...">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Chercher</button>
+                    </form>
+
+                    <h3 class="h4 mt--more">Quartiers</h3>
+                    <div class="card card--flat card--mini mb--more">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Ahuntsic-cartierville (2)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Mercier Hochelaga Maisonneuve (1)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Rosemont (1)
+                            </label>
+                        </div>
+                    </div>
+
+                    <h3 class="h4 mt--more">Tags</h3>
+                    <div class="card card--flat card--mini mb--more">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Natation (2)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Tennis (1)
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Gymnastique (1)
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-7 col-md-9">
+
+                    <section class="pl section">
+                        <h1 class="mt--less">Organismes</h1>
+
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card card--flat card--mini text-center">
+                                    <div class="logo-org">
+                                        <img class="img-responsive" src="img/logo-sports-montreal.jpg" />
+                                    </div>
+                                    <h4>Sports Montréal</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <a href="gymslic.html" class="card card--flat card--mini mb--more text-center" style="display: inline-block;">
+                                    <div class="logo-org">
+                                        <img class="img-responsive" src="img/logo-gymslic.jpg" />
+                                    </div>
+                                    <h4>Gymslic</h4>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card card--flat card--mini text-center">
+                                    <div class="logo-org">
+                                        <img class="img-responsive" src="img/logo-camo.jpg" />
+                                    </div>
+                                    <h4>CAMO Natation</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card card--flat card--mini text-center">
+                                    <div class="logo-org">
+                                        <img class="img-responsive" src="img/logo-tennis-montreal.jpg" />
+                                    </div>
+                                    <h4>Tennis Montréal</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="img/nav.png" />
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+            <footer>
+                <p>&copy; Montreal 2016</p>
+            </footer>
+        </div>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

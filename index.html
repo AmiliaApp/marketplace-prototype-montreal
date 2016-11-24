@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Montr&eacute;al - Loisirs en ligne</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img class="img-responsive" src="img/logo-city.gif" />
+                            </a>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="pv--mini pull-right">
+                                <a href="#" class="btn btn-link">Connexion</a>
+                                <a href="#" class="btn btn-link">EN</a>
+                                <div class="cart">
+                                    <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-shopping-cart"></span><br />Panier</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div id="jumbotronHome" class="jumbotron jumbotron-home mb--none" style="background-image: url('img/jumbotron-activity.jpg')">
+            <div class="container">
+                <h1>Trouvez
+                    <select id="searchSelect" class="home-select">
+                        <option value="activity" selected="selected">une activité</option>
+                        <option value="place">un lieu</option>
+                        <option value="organization">un organisme</option>
+                    </select>
+                </h1>
+                <form id="search" class="form-inline" action="activity-list.html">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg home-search" placeholder="Chercher...">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Chercher</button>
+                </form>
+            </div>
+        </div>
+
+        <!--<div class="bg-white pv--more">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mv--more ph">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="glyphicon glyphicon glyphicon-home font-xl text-grey"></span>
+                                </div>
+                                <div class="media-body pl--less">
+                                    <h2 class="h3 mt--none" class="media-heading">Installations</h2>
+                                    <p>
+                                        Vous recherchez une installation ? Aréna, Bibliothèque, Centre communautaire , etc...
+                                    </p>
+                                    <p>
+                                        <a href="place-list.html" class="btn btn-info">Réserver</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mv--more ph">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="glyphicon glyphicon glyphicon-map-marker font-xl text-grey"></span>
+                                </div>
+                                <div class="media-body pl--less">
+                                    <h2 class="h3 mt--none" class="media-heading">Espaces</h2>
+                                    <p>
+                                        Vous recherchez un espace à louer ? Aire de patinage, terrain de tennis, etc...
+                                    </p>
+                                    <p>
+                                        <a href="place-list.html" class="btn btn-info">Réserver</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mv--more ph">
+                            <div class="media">
+                                <div class="media-left">
+                                    <span class="glyphicon glyphicon-question-sign  font-xl text-grey"></span>
+                                </div>
+                                <div class="media-body pl--less">
+                                    <h2 class="h3 mt--none" class="media-heading">Aide en ligne</h2>
+                                    <p>
+                                        <a href="#">Guide d'utilisation</a>
+                                    </p>
+                                    <p>
+                                        <a href="#">Sécurité et confidentialité</a>
+                                    </p>
+                                    <p class="mb--none">
+                                        <a href="#">Service à la clientèle</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <div class="pt--more">
+            <div class="container">
+                <h2>Activités sélectionnées pour vous</h2>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/activity-1.jpg" />
+                            <h4><a class="text-black" href="#">Cheerleading à Rosemont</a></h4>
+                            <a href="#">Sports Montréal</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/activity-2.jpg" />
+                            <h4><a class="text-black" href="#">Gymnastique 12-14 ans</a></h4>
+                            <a href="#">Sports Montréal</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/activity-3.jpg" />
+                            <h4><a class="text-black" href="#">Camp de jour été 2017</a></h4>
+                            <a href="#">CAMO Natation</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card card--flat card--mini mb--more">
+                            <a class="text-black" href="danse-adulte.html">
+                                <img class="img-responsive" src="img/activity-4.jpg" />
+                                <h4>Danse adulte</h4>
+                            </a>
+                            <a href="gymslic.html">Gymslic</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt--more">
+            <div class="container">
+                <h2>Catégories</h2>
+
+                <div class="row">
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-1.jpg" />
+                            <p class="mt--less mb--none">Plein air</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-2.jpg" />
+                            <p class="mt--less mb--none">Sports en salle</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-3.jpg" />
+                            <p class="mt--less mb--none">Musculation</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-5.jpg" />
+                            <p class="mt--less mb--none">Enfants</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-6.jpg" />
+                            <p class="mt--less mb--none">Bootcamp adulte</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="card card--flat card--mini mb--more">
+                            <img class="img-responsive" src="img/category-7.jpg" />
+                            <p class="mt--less mb--none">Piscine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 mb--more">
+                        <a href="#">Parcourir toutes les catégories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+        <footer>
+            <p>&copy; Montreal 2016</p>
+        </footer>
+    </div>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
