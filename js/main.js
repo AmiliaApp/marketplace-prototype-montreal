@@ -15,9 +15,10 @@ $(document).ready(function() {
 
     $("a").click(function (event) {
       event.preventDefault();
-      window.location = $(this).attr("href");
+      var href = $(this).attr("href");
+      if (href) window.location = href;
     });
-    
+
   })();
 
 });
